@@ -17,4 +17,17 @@ console.log(y);
 console.log(x);
 
 //heap memory (non primitive )
-const obj = {};
+//get reference
+const obj = {
+  name: "Kanchan",
+  age: 35,
+};
+
+const obj2 = obj;
+console.log(`obj1 ${obj.name}`);
+console.log(`obj2 ${obj2.name}`);
+
+obj2.name = "Sonam";
+console.log(obj2.name);
+console.log(`obj1 ${obj.name}`);
+console.log(`obj2 ${obj2.name}`);
