@@ -47,14 +47,14 @@
 
 // // // Scopes --
 
-// // if (true) {
-// //   let a = 5;
-// //   var b = 7;
-// //   let c = a + b;
-// //   console.log(c);
-// // }
-// // console.log(b);
-// // //console.log(a);
+if (true) {
+  let a = 5;
+  var b = 7;
+  let c = a + b;
+  console.log(c);
+}
+//console.log(b);
+console.log(b);
 
 // // //
 
