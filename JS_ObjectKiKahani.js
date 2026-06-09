@@ -39,43 +39,43 @@ const user = {
   },
   email: "Kdkanchan1@gmail.com",
 };
-console.log(user.address.loaction);
-//objects keys
-console.log(Object.keys(user)); //it returns an array
+// console.log(user.address.loaction);
+// //objects keys
+// console.log(Object.keys(user)); //it returns an array
 console.log(Object.values(user)); //it returns an array
-console.log(Object.entries(user)); //returns array and entries as array elemts of key value pair
-
+//console.log(Object.entries(user)); //returns array and entries as array elemts of key value pair
+//[[key , value] ,[key ,value],[key ,value]]
 //Spread operator use case
-const obj1 = {
-  1: "a",
-  2: "b",
-};
-const obj2 = {
-  3: "c",
-  4: "d",
-};
+// const obj1 = {
+//   1: "a",
+//   2: "b",
+// };
+// const obj2 = {
+//   3: "c",
+//   4: "d",
+// };
 
-//join 2 objects
+// //join 2 objects
 
-const obj3 = Object.assign({}, obj1, obj2);
-console.log(obj3);
+// const obj3 = Object.assign({}, obj1, obj2);
+// console.log(obj3);
 
-//Spread operators
-const obj4 = { ...obj1, ...obj2 };
-console.log(obj4);
+// //Spread operators
+// const obj4 = { ...obj1, ...obj2 };
+// console.log(obj4);
 
-//console.log(...obj1); // aise use nahi kr sakte h
-console.log({ ...obj1 });
+// //console.log(...obj1); // aise use nahi kr sakte h
+// console.log({ ...obj1 });
 
-const arr = [1, 2, 3, 4, 5, 6];
-console.log(...arr);
+// const arr = [1, 2, 3, 4, 5, 6];
+// console.log(...arr);
 
-const str = "hello world";
-console.log(...str);
+// const str = "hello world";
+// console.log(...str);
 
-// spread operator it works on things which are iterable
+// // spread operator it works on things which are iterable
 
-console.log(...Object.entries(obj3));
-//
-//if any property is available in the object
-console.log(user.hasOwnProperty("contact"));
+// console.log(...Object.entries(obj3));
+// //
+// //if any property is available in the object
+// console.log(user.hasOwnProperty("contact"));
