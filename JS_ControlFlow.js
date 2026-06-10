@@ -108,21 +108,91 @@
 // console.log(result || "Hello");
 //--------------------------------
 
-//optional chaining ?.
+// //optional chaining ?.
 
-let user1 = {
-  name: "Kunal",
-};
-let user2 = {};
-// console.log(user2.adress?.city);
+// let user1 = {
+//   name: "Kunal",
+// };
+// let user2 = {};
+// // console.log(user2.adress?.city);
 
-// console.log("executed");
+// // console.log("executed");
 
-let ans = user1?.name ?? "GuestUser";
-console.log(ans);
+// let ans = user1?.name ?? "GuestUser";
+// console.log(ans);
 
-console.log(user2?.name ?? "GuestUser");
+// console.log(user2?.name ?? "GuestUser");
 
-console.log(!!"hello"); // conversion to boolean
+// console.log(!!"hello"); // conversion to boolean
 
-console.log(!!0);
+// console.log(!!0);
+
+//
+//Predict the output
+
+// let username = " ";
+// username && console.log("Logged In");
+// console.log("Done");
+
+// //
+// console.log("Hello" && "JavaScript");
+// console.log(0 && "React");
+// console.log(null && 100);
+// //Find the output
+// console.log((10 && 20) || 30);
+
+// //find output
+// let age = 0;
+// console.log(age || 18);
+// console.log(age ?? 18);
+
+// //fix the bug
+//
+//Predict output
+//not operator ulta karega true - false
+// console.log(!"Hello");
+// console.log(!"");
+// console.log(!0);
+// //ulta ni karega value boolean return karega
+// console.log(!!"JavaScript");
+// console.log(!!undefined);
+// console.log(!![]);
+//optional chaining que
+
+// let student = {
+//   name: "Raj",
+//   marks: {
+//     math: 90,
+//   },
+// };
+
+// console.log(student.marks?.math);
+
+// console.log(student.address?.city);
+
+// let user = null;
+
+// console.log(user?.name ?? "Guest");
+
+// console.log([] || "Hello");
+
+// console.log([] && "Hello");
+
+// console.log({} || "JS");
+
+// if ("false") {
+//   console.log("YES");
+// } else {
+//   console.log("NO");
+// }
+// if ([]) {
+//   console.log("Array");
+// }
+
+// if ({}) {
+//   console.log("Object");
+// }
+
+// console.log(1 < 2 < 3);
+
+// console.log(3 > 2 > 1);
