@@ -170,29 +170,28 @@
 
 // console.log(student.address?.city);
 
-// let user = null;
+let user = "kd";
 
-// console.log(user?.name ?? "Guest");
+console.log(user?.name ?? "Guest");
 
-// console.log([] || "Hello");
+console.log([] || "Hello");
 
-// console.log([] && "Hello");
+console.log([] && "Hello");
 
-// console.log({} || "JS");
+console.log({} || "JS");
 
-// if ("false") {
-//   console.log("YES");
-// } else {
-//   console.log("NO");
-// }
+if ("false") {
+  console.log("YES");
+} else {
+  console.log("NO");
+}
 // if ([]) {
 //   console.log("Array");
 // }
-
 // if ({}) {
 //   console.log("Object");
 // }
 
-// console.log(1 < 2 < 3);
+console.log(1 < 2 < 3);
 
-// console.log(3 > 2 > 1);
+console.log(3 > 2 > 1);
