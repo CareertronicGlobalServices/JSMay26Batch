@@ -79,3 +79,16 @@ console.log(Object.values(user)); //it returns an array
 // //
 // //if any property is available in the object
 // console.log(user.hasOwnProperty("contact"));
+//
+
+let userN = {};
+console.log(userN);
+userN["name"] = "Sonam";
+console.log(userN);
+
+let accum = {};
+accum["apple"];
+if (accum["apple"]) {
+  accum["apple"]++;
+} else accum["apple"] = 1;
+console.log(accum);
