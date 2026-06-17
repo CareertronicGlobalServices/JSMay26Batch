@@ -81,14 +81,12 @@ console.log(Object.values(user)); //it returns an array
 // console.log(user.hasOwnProperty("contact"));
 //
 
-let userN = {};
-console.log(userN);
-userN["name"] = "Sonam";
-console.log(userN);
+// let userN = {};
+// console.log(userN);
+// userN["name"] = "Sonam";
+// console.log(userN);
 
-let accum = {};
-accum["apple"];
-if (accum["apple"]) {
-  accum["apple"]++;
-} else accum["apple"] = 1;
+let accum = [];
+console.log(accum["apple"]);
+accum["apple"] = 1;
 console.log(accum);

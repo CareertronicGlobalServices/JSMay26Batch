@@ -168,23 +168,99 @@ const fruitArray = [
 // }
 //obj[]
 
-const resultObj = fruitArray.reduce((accum, fruitElement) => {
-  if (accum[fruitElement]) {
-    accum[fruitElement]++;
-  } else accum[fruitElement] = 1;
+// const resultObj = fruitArray.reduce((accum, fruitElement) => {
+//   if (accum[fruitElement]) {
+//     accum[fruitElement]++;
+//   } else accum[fruitElement] = 1;
 
-  return accum;
-}, {});
-console.log(resultObj);
+//   return accum;
+// }, {});
+// console.log(resultObj);
 
 // //Questions
-// let products = [
-//   {name:"Laptop", price:70000, available:true},
-//   {name:"Phone", price:30000, available:false},
-//   {name:"Tablet", price:20000, available:true},
-//   {name:"TV", price:90000, available:true}
-// ];
+let products = [
+  { name: "Laptop", price: 70000, available: true },
+  { name: "Phone", price: 30000, available: false },
+  { name: "Tablet", price: 20000, available: true },
+  { name: "TV", price: 90000, available: true },
+];
 // find products
 // 1.which are available?
 // 2.total
 // 3.prices >30000
+// // 4.most expensive product
+// const maxProduct = products.reduce((max, product) => {
+//   if (product.price > max.price) {
+//     return product;
+//   } else return max;
+// });
+// console.log(maxProduct);
+// //Q.2
+// let users = [
+//   { name: "Amit", role: "admin" },
+//   { name: "Riya", role: "student" },
+//   { name: "John", role: "admin" },
+//   { name: "Sara", role: "student" },
+//   { name: "Sara", role: "HR" },
+// ];
+// Expected Output:
+// {
+//  admin:[
+//   {name:"Amit", role:"admin"},
+//   {name:"John", role:"admin"}
+//  ],
+
+//  student:[
+//   {name:"Riya", role:"student"},
+// //   {name:"Sara", role:"student"}
+// //  ]
+// // }
+
+// let result = users.reduce((obj, user) => {
+//   if (obj[user.role]) {
+//     obj[user.role].push(user);
+//   } else obj[user.role] = [user];
+
+//   return obj;
+// }, {});
+// console.log(result);
+
+// let users = [
+//   { id: 101, name: "Amit", role: "admin" },
+//   { id: 102, name: "Riya", role: "student" },
+//   { id: 103, name: "John", role: "admin" },
+//   { id: 104, name: "Sara", role: "student" },
+//   { id: 105, name: "Sara", role: "HR" },
+// ];
+// // {
+// //   101 : {id: 101, name: "Amit", role: "admin" }
+// // }
+
+// let result = users.reduce((accu, user) => {
+//   accu[user.id] = user;
+//   return accu;
+// }, {});
+// console.log(result);
+let orders = [
+  { user: "Amit", amount: 500, status: "success" },
+  { user: "Riya", amount: 700, status: "failed" },
+  { user: "Amit", amount: 1000, status: "success" },
+  { user: "John", amount: 300, status: "success" },
+];
+// {
+//   amit:1500
+//   john:300
+// }
+let result = orders
+  .filter((item) => {
+    return item.status === "success";
+  })
+  .reduce((accum, order) => {
+    if (accum[order.user]) {
+      accum[order.user] += order.amount;
+    } else accum[order.user] = order.amount;
+
+    return accum;
+  }, {});
+
+console.log(result);
