@@ -1,4 +1,4 @@
-// const promiseOne = new Promise(function (resolve, reject) {
+// // const promiseOne = new Promise(function (resolve, reject) {
 //   setTimeout(() => {
 //     console.log("Async Task sone");
 //     resolve();
