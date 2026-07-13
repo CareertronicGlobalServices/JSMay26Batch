@@ -34,7 +34,7 @@ function getPost(batman) {
 function getcomments(superman) {
   setTimeout(() => {
     console.log("comments Loaded");
-    superman("hi comments");
+    superman(" ");
   }, 1000);
 }
 login(function () {
