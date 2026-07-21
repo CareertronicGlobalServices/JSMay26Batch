@@ -3,14 +3,14 @@
 function outer() {
   let count = 0;
   return function inner() {
-    count++;
+    count = count + 3;
     console.log(count);
   };
 }
 let test = outer();
 console.log(test);
-test();
-test();
+test(); //1
+test(); //2
 
 // // //console.log(count);
 

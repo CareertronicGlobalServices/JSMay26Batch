@@ -1,27 +1,27 @@
-// // const user = {
-// //   uname: "Sonam",
-// //   age: 35,
-// //   intro: function () {
-// //     console.log(`${this.uname} is ${this.age} years old`);
-// //   },
-// // };
-// // user.intro();
+const user = {
+  uname: "Sonam",
+  age: 35,
+  intro: function () {
+    console.log(`${this.uname} is ${this.age} years old`);
+  },
+};
+user.intro();
 
-// const person1 = {
-//   name: "XYZ",
-//   age: 56,
-// };
-// const person2 = {
-//   name: "ABC",
-//   age: 58,
-// };
+const person1 = {
+  name: "XYZ",
+  age: 56,
+};
+const person2 = {
+  name: "ABC",
+  age: 58,
+};
 
-// function greet(city) {
-//   console.log(`${this.name} is ${this.age} years old and  is from ${city}`);
-// }
-// greet("raipur");
+function greet(city) {
+  console.log(`${this.name} is ${this.age} years old and  is from ${city}`);
+}
+greet("raipur");
 
-// greet.call(person1, "Raipur"); // call Right now
+greet.call(person1, "Raipur"); // call Right now
 
 // const emp1 = {
 //   ename: "Sonam1",

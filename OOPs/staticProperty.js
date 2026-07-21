@@ -5,10 +5,14 @@ class User {
   loginMsg() {
     return `username is ${this.username}`;
   }
+  static createId() {
+    return `12345`;
+  }
 }
 
 const kunal1 = new User("Kunal");
 console.log(kunal1.loginMsg());
+//console.log(kunal1.createId());
 
 class kunal extends User {
   constructor(username, age, emailId, contact) {
@@ -17,11 +21,6 @@ class kunal extends User {
     this.emailId = emailId;
     this.contact = contact;
   }
-  checkObj() {
-    console.log("nayaObj   " + this.username);
-  }
 }
 const Rahul = new kunal("Rahul", 25, "r@r.com", 112314462);
-const Shubham = new kunal("Rahul", 25, "r@r.com", 112314462);
-console.log(Rahul.checkObj());
-console.log(Shubham instanceof User);
+console.log(Rahul.createId());
